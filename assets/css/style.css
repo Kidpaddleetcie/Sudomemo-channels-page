@@ -1,0 +1,82 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url(https://www.sudomemo.net/theatre_assets/theme/sudomemo_dark_stars/dark_stars.png);
+  background-attachment: fixed;
+  background-color: #35383c;
+  color: white;
+}
+
+.channel {
+  height: 30vh;
+  margin: 15px;
+  overflow-x: auto;
+  border-top: 2px #28a745 solid;
+  border-bottom: 2px #28a745 solid;
+  border-left: 2px #28a745 solid;
+}
+
+.channel::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.channel::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #28a745), to(#28a745));
+  background: linear-gradient(360deg, #28a745 100%, #28a745 100%);
+  border-radius: 15px;
+}
+
+.channel::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(13deg, #98ebac 0%, #4ada6c 0%);
+}
+
+.channel::-webkit-scrollbar-track {
+  background: #343a40;
+  border-radius: 50px;
+}
+
+@media (orientation: portrait) {
+  .channel {
+    width: 100%;
+  }
+  .channel a {
+    text-align: center;
+    font-size: 0.7em;
+  }
+}
+
+@media (orientation: landscape) {
+  .channel a {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+.channel h2 {
+  position: absolute;
+}
+
+@media (orientation: portrait) {
+  .pouf {
+    width: 100%;
+    font-size: 0.5em;
+  }
+}
+
+@media (orientation: landscape) {
+  .pouf {
+    position: absolute;
+    z-index: 2;
+    width: 15vw;
+    font-size: 0.5em;
+  }
+}
+
+.list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.911);
+}
+
+footer p {
+  font-size: 2vw;
+}
+/*# sourceMappingURL=style.css.map */
